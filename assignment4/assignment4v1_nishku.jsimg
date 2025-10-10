@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
-<archive xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="assignment4v1_nishku.jsimg" timestamp="Sat Oct 11 00:06:44 CEST 2025" xsi:noNamespaceSchemaLocation="Archive.xsd">
+<archive xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="assignment4v1_nishku.jsimg" timestamp="Sat Oct 11 00:48:12 CEST 2025" xsi:noNamespaceSchemaLocation="Archive.xsd">
     <sim disableStatisticStop="false" logDecimalSeparator="." logDelimiter="," logPath="/home/dvs/JMT" logReplaceMode="0" maxEvents="-1" maxSamples="16000000" name="assignment4v1_nishku.jsimg" polling="1.0" xsi:noNamespaceSchemaLocation="SIMmodeldefinition.xsd">
         <userClass name="Cars" priority="0" referenceSource="Source 1" softDeadline="0.0" type="open"/>
         <node name="Source 1">
@@ -142,7 +142,7 @@
             </section>
             <section className="Server">
                 <parameter classPath="java.lang.Integer" name="maxJobs">
-                    <value>4</value>
+                    <value>6</value>
                 </parameter>
                 <parameter array="true" classPath="java.lang.Integer" name="numberOfVisits">
                     <refClass>Cars</refClass>
@@ -177,7 +177,7 @@
                 </parameter>
                 <parameter array="true" classPath="java.lang.Integer" name="serversPerServerType">
                     <subParameter classPath="java.lang.Integer" name="serverTypesNumOfServers">
-                        <value>4</value>
+                        <value>6</value>
                     </subParameter>
                 </parameter>
                 <parameter array="true" classPath="java.lang.Object" name="serverCompatibilities">
@@ -302,23 +302,13 @@
         <station name="Exit">
             <position angle="0.0" rotate="false" x="703.0" y="122.0"/>
         </station>
-        <parametric classPath="jmt.gui.common.definitions.parametric.NumberOfServersParametricAnalysis" enabled="true">
-            <field name="From" value="4.0"/>
-            <field name="Server type" value="Server Type 1"/>
-            <field name="Station" value="Charging station"/>
-            <field name="Steps" value="7"/>
-            <field name="To" value="10.0"/>
-        </parametric>
     </jmodel>
-    <results elapsedTime="0" logDecimalSeparator="." logDelimiter="," pollingInterval="0.0" xsi:noNamespaceSchemaLocation="Results.xsd">
-        <measure alpha="0.995" analyzedSamples="7" name="Network_Cars_System Response Time" nodeType="" precision="0.01" referenceClass="Cars" referenceStation="Network" type="15">
-            <sample lowerBound="96.67282081914982" meanValue="97.43778867644414" upperBound="98.20275653373847" validity="true"/>
-            <sample lowerBound="65.34690159526136" meanValue="65.98259121321948" upperBound="66.6182808311776" validity="true"/>
-            <sample lowerBound="53.06154930325303" meanValue="53.45510388280386" upperBound="53.84865846235469" validity="true"/>
-            <sample lowerBound="47.32625553487198" meanValue="47.731242697946364" upperBound="48.136229861020745" validity="true"/>
-            <sample lowerBound="44.66549947329757" meanValue="44.9961850039062" upperBound="45.326870534514825" validity="true"/>
-            <sample lowerBound="43.66056284875316" meanValue="43.985399688834065" upperBound="44.31023652891497" validity="true"/>
-            <sample lowerBound="43.1420727264417" meanValue="43.435477529568416" upperBound="43.728882332695136" validity="true"/>
+    <results elapsedTime="3218" logDecimalSeparator="." logDelimiter="," pollingInterval="1.0" xsi:noNamespaceSchemaLocation="Results.xsd">
+        <measure alpha="0.995" analyzedSamples="573440" discardedSamples="0" finalValue="53.39766175379192" logFile="/home/dvs/JMT/Cars_System Response Time.csv" name="Cars_System Response Time" nodeType="" precision="0.01" referenceClass="Cars" referenceStation="" state="1" type="15">
+            <sample lastIntervalAvgValue="52.87516181965813" lowerBound="50.80489886617208" meanValue="52.69473490685475" simulationTime="951044.8339548012" upperBound="54.584570947537415"/>
+            <sample lastIntervalAvgValue="53.66605439661155" lowerBound="52.68920908319436" meanValue="53.55367684103422" simulationTime="4098570.5282120765" upperBound="54.41814459887407"/>
+            <sample lastIntervalAvgValue="53.26296328348581" lowerBound="52.83732458103679" meanValue="53.43355423984201" simulationTime="7296880.064165524" upperBound="54.02978389864723"/>
+            <sample lastIntervalAvgValue="53.459631424390665" lowerBound="53.047495112224105" meanValue="53.39766175379192" simulationTime="9369900.966749664" upperBound="53.74782839535974"/>
         </measure>
     </results>
 </archive>
