@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
-<archive xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="assignment9_nishku.jsimg" timestamp="Sat Nov 01 20:06:07 CET 2025" xsi:noNamespaceSchemaLocation="Archive.xsd">
-    <sim disableStatisticStop="false" logDecimalSeparator="." logDelimiter="," logPath="/Users/devisnishku/JMT" logReplaceMode="0" maxEvents="-1" maxSamples="1000000" name="assignment9_nishku.jsimg" polling="1.0" xsi:noNamespaceSchemaLocation="SIMmodeldefinition.xsd">
+<archive xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="assignment9_nishku.jsimg" timestamp="Sat Nov 01 20:58:14 CET 2025" xsi:noNamespaceSchemaLocation="Archive.xsd">
+    <sim disableStatisticStop="false" logDecimalSeparator="." logDelimiter="," logPath="/home/dvs/JMT/" logReplaceMode="0" maxEvents="-1" maxSamples="1000000" name="assignment9_nishku.jsimg" polling="1.0" xsi:noNamespaceSchemaLocation="SIMmodeldefinition.xsd">
         <userClass customers="3" name="Rainbow" priority="0" referenceSource="Rbow_Out_Exit" softDeadline="0.0" type="closed"/>
         <userClass customers="3" name="Red" priority="0" referenceSource="Red_Out_Exit" softDeadline="0.0" type="closed"/>
         <userClass customers="1" name="LockA" priority="0" referenceSource="A_Idle" softDeadline="0.0" type="closed"/>
@@ -2573,11 +2573,13 @@
         <connection source="Rbow_Out_Entry" target="Rbow_Out_Crossing"/>
         <preload>
             <stationPopulations stationName="Red_Out_Exit">
-                <classPopulation population="3" refClass="Rainbow"/>
                 <classPopulation population="3" refClass="Red"/>
             </stationPopulations>
             <stationPopulations stationName="A_Idle">
                 <classPopulation population="1" refClass="LockA"/>
+            </stationPopulations>
+            <stationPopulations stationName="Rbow_Out_Exit">
+                <classPopulation population="3" refClass="Rainbow"/>
             </stationPopulations>
             <stationPopulations stationName="B_Idle">
                 <classPopulation population="1" refClass="LockB"/>
@@ -2605,19 +2607,19 @@
             <position angle="0.0" rotate="false" x="631.0" y="184.0"/>
         </station>
         <station name="Red_In_Crossing">
-            <position angle="0.0" rotate="false" x="737.0" y="235.0"/>
+            <position angle="0.0" rotate="false" x="734.0" y="184.0"/>
         </station>
         <station name="Red_In_Exit">
-            <position angle="0.0" rotate="false" x="998.0" y="184.0"/>
+            <position angle="0.0" rotate="false" x="866.0" y="184.0"/>
         </station>
         <station name="Red_B_Entry">
-            <position angle="0.0" rotate="false" x="1229.0" y="184.0"/>
+            <position angle="0.0" rotate="false" x="1057.0" y="185.0"/>
         </station>
         <station name="Red_B_Crossing">
-            <position angle="0.0" rotate="false" x="1348.0" y="184.0"/>
+            <position angle="0.0" rotate="false" x="1176.0" y="185.0"/>
         </station>
         <station name="Red_B_Exit">
-            <position angle="0.0" rotate="false" x="1473.0" y="184.0"/>
+            <position angle="0.0" rotate="false" x="1301.0" y="185.0"/>
         </station>
         <station name="Rbow_A_Entry">
             <position angle="0.0" rotate="false" x="262.0" y="564.0"/>
@@ -2635,16 +2637,16 @@
             <position angle="0.0" rotate="false" x="751.0" y="564.0"/>
         </station>
         <station name="Rbow_In_Exit">
-            <position angle="0.0" rotate="false" x="894.0" y="564.0"/>
+            <position angle="0.0" rotate="false" x="867.0" y="564.0"/>
         </station>
         <station name="Rbow_B_Entry">
-            <position angle="0.0" rotate="false" x="1223.0" y="564.0"/>
+            <position angle="0.0" rotate="false" x="1051.0" y="565.0"/>
         </station>
         <station name="Rbow_B_Crossing">
-            <position angle="0.0" rotate="false" x="1341.0" y="564.0"/>
+            <position angle="0.0" rotate="false" x="1169.0" y="565.0"/>
         </station>
         <station name="Rbow_B_Exit">
-            <position angle="0.0" rotate="false" x="1487.0" y="564.0"/>
+            <position angle="0.0" rotate="false" x="1315.0" y="565.0"/>
         </station>
         <station name="A_Idle">
             <position angle="0.0" rotate="false" x="174.0" y="324.0"/>
@@ -2653,31 +2655,31 @@
             <position angle="0.0" rotate="false" x="54.0" y="562.0"/>
         </station>
         <station name="B_Idle">
-            <position angle="0.0" rotate="false" x="1147.0" y="329.0"/>
+            <position angle="0.0" rotate="false" x="975.0" y="330.0"/>
         </station>
         <station name="Red_Out_Crossing">
-            <position angle="0.0" rotate="false" x="871.0" y="64.0"/>
+            <position angle="0.0" rotate="false" x="738.0" y="59.0"/>
         </station>
         <station name="Red_Out_Entry">
-            <position angle="0.0" rotate="false" x="1617.0" y="66.0"/>
+            <position angle="0.0" rotate="false" x="1426.0" y="66.0"/>
         </station>
         <station name="Rbow_Out_Crossing">
-            <position angle="0.0" rotate="false" x="866.0" y="444.0"/>
+            <position angle="0.0" rotate="false" x="734.0" y="424.0"/>
         </station>
         <station name="Rbow_Out_Entry">
-            <position angle="0.0" rotate="false" x="1605.0" y="444.0"/>
+            <position angle="0.0" rotate="false" x="1419.0" y="430.0"/>
         </station>
     </jmodel>
-    <results elapsedTime="2739" logDecimalSeparator="." logDelimiter="," pollingInterval="1.0" xsi:noNamespaceSchemaLocation="Results.xsd">
-        <measure alpha="0.99" analyzedSamples="0" discardedSamples="0" finalValue="0.0" name="Rainbow_System Throughput" nodeType="" precision="0.03" referenceClass="Rainbow" referenceStation="" state="3" type="16">
-            <sample lastIntervalAvgValue="Infinity" meanValue="0.0" simulationTime="0.0"/>
-            <sample lastIntervalAvgValue="Infinity" meanValue="0.0" simulationTime="0.0"/>
-            <sample lastIntervalAvgValue="Infinity" meanValue="0.0" simulationTime="0.0"/>
-            <sample lastIntervalAvgValue="0.0" meanValue="0.0" simulationTime="0.0"/>
+    <results elapsedTime="2252" logDecimalSeparator="." logDelimiter="," pollingInterval="1.0" xsi:noNamespaceSchemaLocation="Results.xsd">
+        <measure alpha="0.99" analyzedSamples="40960" discardedSamples="0" finalValue="0.04847448472813294" name="Rainbow_System Throughput" nodeType="" precision="0.03" referenceClass="Rainbow" referenceStation="" state="1" type="16">
+            <sample lastIntervalAvgValue="0.04902113833441696" meanValue="0.04902113833441696" simulationTime="14014.362443265996"/>
+            <sample lastIntervalAvgValue="0.04812842639765972" lowerBound="0.046267495454347225" meanValue="0.04803581070241039" simulationTime="411180.8902258881" upperBound="0.049944665115556466"/>
+            <sample lastIntervalAvgValue="0.04865092943682075" lowerBound="0.04655546687524295" meanValue="0.04829584699138058" simulationTime="799272.139839512" upperBound="0.050171401360998"/>
+            <sample lastIntervalAvgValue="0.04814600255936428" lowerBound="0.04779504188706836" meanValue="0.04847448472813294" simulationTime="846607.3261239803" upperBound="0.0491735237362259"/>
         </measure>
-        <measure alpha="0.99" analyzedSamples="35840" discardedSamples="0" finalValue="0.0481236689165092" name="Red_System Throughput" nodeType="" precision="0.03" referenceClass="Red" referenceStation="" state="1" type="16">
-            <sample lastIntervalAvgValue="0.04829548491236632" lowerBound="0.0464205255578766" meanValue="0.04827247363207704" simulationTime="225963.15203795928" upperBound="0.05027832886971751"/>
-            <sample lastIntervalAvgValue="0.04808776473220371" lowerBound="0.047221661828959816" meanValue="0.0481236689165092" simulationTime="744390.2433954563" upperBound="0.0490608065243758"/>
+        <measure alpha="0.99" analyzedSamples="15360" discardedSamples="365" finalValue="0.04854365500413749" name="Red_System Throughput" nodeType="" precision="0.03" referenceClass="Red" referenceStation="" state="1" type="16">
+            <sample lastIntervalAvgValue="0.046526803058720985" meanValue="0.046526803058720985" simulationTime="14013.42789826152"/>
+            <sample lastIntervalAvgValue="0.048487769601435846" lowerBound="0.047200090533492015" meanValue="0.04854365500413749" simulationTime="324937.1953539121" upperBound="0.049965950492667166"/>
         </measure>
     </results>
 </archive>
